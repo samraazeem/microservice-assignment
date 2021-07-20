@@ -15,7 +15,7 @@ skipDefaultCheckout(true)
     stages {
         stage("Code Checkout") {
             steps {
-                git url: 'https://github.com/samraazeem/microservice_assignment.git'
+                git url: 'https://github.com/samraazeem/microservice-assignment.git'
             }
         }
         stage('Build Stage') {
