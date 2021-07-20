@@ -59,7 +59,7 @@ skipDefaultCheckout(true)
         stage('Run Docker Image'){
             steps{
                 sh 'docker rm -f samra-nagp'
-                sh 'docker run -d --name samra-nagp -p 80:8080 samraazeem/maven:"$BUILD_NUMBER"'
+                sh 'docker run -d --name samra-nagp -p 80:8080 samraazeem/nagp_assignment:"$BUILD_NUMBER"'
             }
         } 
     }
